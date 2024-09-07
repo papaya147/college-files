@@ -1,0 +1,16 @@
+Read NoStud
+Let Counter = 1
+Read NoCourse
+Read M1, M2, M3
+Calculate Sum = M1, M2, M3
+Calculate Avg = Sum / NoCourse
+
+Check whether Avg >= 50
+If true, then set output = Pass
+Otherwise, set output = Fail
+
+Display output
+
+Counter = Counter + 1
+Check whether Counter <= NoStud
+If true, then go to step 3 (Iterational Step)

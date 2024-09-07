@@ -1,0 +1,109 @@
+
+**** 12/20/21 17:35:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stepdown"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 10\experiment10-pspicefiles
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "stepdown.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Abhinav Srivatsa\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXPERIMENT10
+V_V1         N14426 0  
++SIN 0 200 50 0 0 0
+R_R1         N14426 N14440  0.1 TC=0,0 
+X_TX1    N14440 0 N14447 N14454 SCHEMATIC1_TX1 
+R_R2         N14454 N14447  100k TC=0,0 
+R_R3         0 N14454  1G TC=0,0 
+X_TX2    N15181 0 N15249 N15305 SCHEMATIC1_TX2 
+R_R5         N15305 N15249  100k TC=0,0 
+R_R6         0 N15305  1G TC=0,0 
+R_R4         N15173 N15181  0.1 TC=0,0 
+V_V2         N15173 0  
++SIN 0 200 50 0 0 0
+
+.subckt SCHEMATIC1_TX1 1 2 3 4  
+K_TX1         L1_TX1 L2_TX1 1
+L1_TX1         1 2 20
+L2_TX1         3 4 2000
+.ends SCHEMATIC1_TX1
+
+.subckt SCHEMATIC1_TX2 1 2 3 4  
+K_TX2         L1_TX2 L2_TX2 1
+L1_TX2         1 2 2000
+L2_TX2         3 4 20
+.ends SCHEMATIC1_TX2
+
+**** RESUMING stepdown.cir ****
+.END
+
+**** 12/20/21 17:35:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stepdown"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 10\experiment10-pspicefiles
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14426)    0.0000 (N14440)    0.0000 (N14447)    0.0000 (N14454)    0.0000     
+
+(N15173)    0.0000 (N15181)    0.0000 (N15249)    0.0000 (N15305)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/20/21 17:35:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stepdown"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 10\experiment10-pspicefiles
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

@@ -1,0 +1,89 @@
+
+**** 11/17/21 15:45:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-phasecurrent"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Testing\StarDelta-PSpiceFiles\SCHE
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "phasecurrent.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Abhinav Srivatsa\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source STARDELTA
+V_V1         N00185 0 DC 0Vdc AC 420 
+V_V2         N00199 0 DC 0Vdc AC 420 
+V_V3         N00192 0 DC 0Vdc AC 420 
+R_R1         N00192 N00185  10 TC=0,0 
+R_R2         N00185 N00199  10 TC=0,0 
+R_R3         N00192 N00199  10 TC=0,0 
+
+**** RESUMING phasecurrent.cir ****
+.END
+
+**** 11/17/21 15:45:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-phasecurrent"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Testing\StarDelta-PSpiceFiles\SCHE
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00185)    0.0000 (N00192)    0.0000 (N00199)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/17/21 15:45:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-phasecurrent"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Testing\StarDelta-PSpiceFiles\SCHE
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

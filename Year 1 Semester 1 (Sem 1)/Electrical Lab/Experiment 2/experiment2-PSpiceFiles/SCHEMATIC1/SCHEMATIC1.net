@@ -1,0 +1,8 @@
+* source EXPERIMENT2
+R_R1         N00527 N00537  4 TC=0,0 
+V_V1         N00537 N00543 6
+I_I2         0 N00527 DC 1  
+R_R2         N00527 N00601  6 TC=0,0 
+R_R4         0 N00601  3 TC=0,0 
+R_R3         N00601 N00543  2 TC=0,0 
+I_I1         0 N00543 DC 2  

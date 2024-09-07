@@ -1,0 +1,89 @@
+
+**** 11/08/21 14:05:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mesh"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 1\experiment1-PSpiceFiles\SCHEM
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "mesh.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Abhinav Srivatsa\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXPERIMENT1
+R_R5         N00500 0  5 TC=0,0 
+V_V2         N00558 N00500 6
+R_R3         N00558 N00490  2 TC=0,0 
+R_R1         N00490 N00500  10 TC=0,0 
+R_R4         N00490 0  4 TC=0,0 
+R_R2         N00644 N00558  1 TC=0,0 
+V_V1         N00644 0 8
+
+**** RESUMING mesh.cir ****
+.END
+
+**** 11/08/21 14:05:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mesh"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 1\experiment1-PSpiceFiles\SCHEM
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00490)    4.1026 (N00500)     .8120 (N00558)    6.8120 (N00644)    8.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.667E-01
+    V_V1        -1.188E+00
+
+    TOTAL POWER DISSIPATION   1.05E+01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/08/21 14:05:19 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-mesh"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 1\experiment1-PSpiceFiles\SCHEM
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

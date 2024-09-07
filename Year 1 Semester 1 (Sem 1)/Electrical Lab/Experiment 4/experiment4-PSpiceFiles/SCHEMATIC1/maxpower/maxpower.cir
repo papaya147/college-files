@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-maxpower"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 4\experiment4-pspicefiles\schematic1\maxpower.sim ] 
+
+** Creating circuit file "maxpower.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Abhinav Srivatsa\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM a 1 200 0.0005 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

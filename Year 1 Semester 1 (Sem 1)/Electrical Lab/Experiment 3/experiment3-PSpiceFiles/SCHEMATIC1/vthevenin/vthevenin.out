@@ -1,0 +1,86 @@
+
+**** 11/08/21 14:06:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-vthevenin"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 3\experiment3-PSpiceFiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "vthevenin.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Abhinav Srivatsa\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXPERIMENT3
+I_I1         0 N01077 DC 10  
+V_V1         N01101 0 100
+R_R3         0 N01077  5 TC=0,0 
+R_R2         0 N01091  20 TC=0,0 
+R_R1         N01091 N01101  30 TC=0,0 
+
+**** RESUMING vthevenin.cir ****
+.END
+
+**** 11/08/21 14:06:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-vthevenin"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 3\experiment3-PSpiceFiles\
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01077)   50.0000 (N01091)   40.0000 (N01101)  100.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.000E+00
+
+    TOTAL POWER DISSIPATION   2.00E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/08/21 14:06:41 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-vthevenin"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 3\experiment3-PSpiceFiles\
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

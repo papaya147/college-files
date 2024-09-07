@@ -1,0 +1,8 @@
+* source EXPERIMENT4
+V_V1         N018031 0 2
+R_R5         N01763 N01777  {a} TC=0,0 
+R_R4         0 N01777  15 TC=0,0 
+R_R2         0 N01763  10 TC=0,0 
+I_I1         0 N01777 DC 4  
+R_R3         N018031 N01763  1 TC=0,0 
+.PARAM  a=1

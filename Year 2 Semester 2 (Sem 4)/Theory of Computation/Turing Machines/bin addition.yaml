@@ -1,0 +1,22 @@
+# for whole numbers:
+input: 111X1001
+blank: B
+
+start state: q0
+table:
+  q0:
+    [0, 1, X]: {R: q0}
+    [B]: {L: q1}
+  q1:
+    [0]: {write: 1, L: q1}
+    [1]: {write: 0, L: q2}
+    [X]: {write: B, R: q4}
+  q2:
+    [0, 1]: {L: q2}
+    [X]: {L: q3}
+  q3:
+    [1]: {write: 0, L: q3}
+    [0, B]: {write: 1, R: q0}
+  q4:
+    [1]: {write: B, R: q4}
+end state: q4

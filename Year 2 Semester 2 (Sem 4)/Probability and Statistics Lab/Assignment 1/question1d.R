@@ -1,0 +1,6 @@
+x = seq(-5, 5, 0.1)
+y = abs(x)
+plot(x, y, type="l", lwd=2, col="blue", ylim=c(-5, 5))
+grid(nx=NULL, ny=NULL, lty=1)
+lines(x, rep(0, length(x)), lwd=2, col="black")
+lines(rep(0, length(x)), x, lwd=2, col="black")

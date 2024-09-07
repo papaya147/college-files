@@ -1,0 +1,16 @@
+input: 1001
+blank: B
+
+start state: q0
+table:
+  q0:
+    [0]: {write: 0, R: q0}
+    [1]: {write: 1, R: q0}
+    [B]: {write: B, L: q1}
+  q1:
+    [1]: {write: 0, L: q1}
+    [0]: {write: 1, R: q2}
+    [B]: {write: 1, R: q2}
+  q2:
+  
+end state: q2

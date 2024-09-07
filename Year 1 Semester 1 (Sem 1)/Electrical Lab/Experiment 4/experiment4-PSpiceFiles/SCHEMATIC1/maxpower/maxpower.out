@@ -1,0 +1,61 @@
+
+**** 01/03/22 10:31:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-maxpower"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 4\experiment4-pspicefiles\s
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "maxpower.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Abhinav Srivatsa\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM a 1 200 0.0005 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXPERIMENT4
+V_V1         N018031 0 2
+R_R5         N01763 N01777  {a} TC=0,0 
+R_R4         0 N01777  15 TC=0,0 
+R_R2         0 N01763  10 TC=0,0 
+I_I1         0 N01777 DC 4  
+R_R3         N018031 N01763  1 TC=0,0 
+.PARAM  a=1
+
+**** RESUMING maxpower.cir ****
+.END
+
+
+          JOB CONCLUDED
+
+**** 01/03/22 10:31:49 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-maxpower"  [ D:\College Work\Year 1 Semester 1 (Sem 1)\Electrical Lab\Experiment 4\experiment4-pspicefiles\s
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        3.72
+

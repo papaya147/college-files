@@ -1,0 +1,66 @@
+Statement: Calculate the salary of an employee who works as a daily wage
+
+Data: 
+NoEmployees
+NoHoursWorked
+HourlyWage
+
+Processing:
+Calculate DailyWage = HourlyWage * NoHoursWorked
+
+Output:
+DailyWage
+
+Alternative Solution:
+Take all data as input
+Define all data
+
+-------------------------------------------------------------------------------
+Statement: Calculate area of circle
+
+Data:
+Pi = 3.14
+RadiusofCircle = user input
+
+Processing:
+Calculate Area = Pi * RaduisofCircle * RaduisofCircle
+
+Output:
+Area
+
+Alternative Solution:
+Define RadiusofCircle
+
+-------------------------------------------------------------------------------
+Statement: Convert the distance in miles to kilometers where 1.609 kilometers per mile
+
+Data:
+Miles = user input
+
+Processing:
+Calculate Kilometers = Miles / 1.609
+
+Output:
+Kilometers
+
+Alternative Solution:
+Define Miles
+
+-------------------------------------------------------------------------------
+Statement: Compute and display the temperature inside the earth in Celsius and Fahrenheit
+Celsius = 10 x (depth) + 20
+Fahrenheit = 1.8 x (Celsius) + 32
+
+Data:
+Depth = user input
+
+Processing:
+Calculate Celcius = 10 * Depth +20
+Calculate Farenheit = 1.8 * Celcius + 32
+
+Output:
+Celcius
+Farenheit
+
+Alternative Solution:
+Define Depth

@@ -1,0 +1,7 @@
+* source STARDELTA
+V_V1         N00185 0 DC 0Vdc AC 420 
+V_V2         N00199 0 DC 0Vdc AC 420 
+V_V3         N00192 0 DC 0Vdc AC 420 
+R_R1         N00192 N00185  10 TC=0,0 
+R_R2         N00185 N00199  10 TC=0,0 
+R_R3         N00192 N00199  10 TC=0,0 

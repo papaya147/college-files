@@ -1,0 +1,27 @@
+input: 1000X
+blank: B
+
+start state: q0
+table:
+  q0:
+    [0]: {R: q0}
+    [1]: {R: q0}
+    [X]: {L: q1}
+  q1:
+    [0]: {write: 1, L: q1}
+    [1]: {write: 0, R: q2}
+    [B]: {R: q5}
+  q2:
+    [1]: {R: q2}
+    [X]: {R: q3}
+  q3:
+    [1]: {R: q3}
+    [B]: {write: 1, L: q4}
+  q4:
+    [1]: {L: q4}
+    [X]: {L: q1}
+  q5:
+    [1]: {write: B, R: q5}
+    [X]: {write: B, R: q6}
+  q6:
+end state: q6
